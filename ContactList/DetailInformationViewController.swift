@@ -18,6 +18,7 @@ class DetailInformationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.largeTitleDisplayMode = .never
         navigationItem.title = contactInfo.fullName()
         phoneLabel.text = "Phone: " + contactInfo.phone
         emailLabel.text = "Email: " + contactInfo.email
